@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Data Siswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📋 CRUD Data Siswa</h1>
+    <p>Terhubung langsung ke Google Sheets</p>
+
+    <!-- Form Tambah / Edit Data -->
+    <div class="form-container">
+      <h2>➕ Tambah / Edit Siswa</h2>
+      <input type="hidden" id="id"> <!-- ID untuk update -->
+      <input type="text" id="nis" placeholder="NIS" required>
+      <input type="text" id="nama" placeholder="Nama" required>
+      <select id="jk" required>
+        <option value="">Pilih Jenis Kelamin</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+      <input type="text" id="kelas" placeholder="Kelas" required>
+      <input type="text" id="keterangan" placeholder="Keterangan" required>
+      <button onclick="submitData()">💾 Simpan</button>
+      <button onclick="resetForm()" class="secondary">🔄 Reset</button>
+      <p id="formStatus"></p>
+    </div>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchInput" placeholder="🔍 Cari nama atau NIS..." onkeyup="searchTable()">
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading">Memuat data...</div>
+
+    <!-- Table -->
+    <div class="table-container">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NIS</th>
+            <th>Nama</th>
+            <th>Jenis Kelamin</th>
+            <th>Kelas</th>
+            <th>Keterangan</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data dimuat oleh script.js -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

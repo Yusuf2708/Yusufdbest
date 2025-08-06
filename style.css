@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fefcfb; /* Putih krem lembut */
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+h1 { 
+  margin-bottom: 5px; 
+  font-weight: 600; 
+  color: #1b3b6f; /* Biru navy lembut */
+}
+p { 
+  margin-bottom: 25px; 
+  font-size: 14px; 
+  color: #555; 
+}
+
+/* Form */
+.form-container {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #d4e4ff; /* Biru pastel tipis */
+}
+.form-container h2 { 
+  margin-top: 0; 
+  font-size: 18px; 
+  font-weight: 600; 
+  color: #1b3b6f;
+}
+.form-container input, .form-container select {
+  display: block;
+  width: 90%;
+  max-width: 380px;
+  margin: 10px auto;
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid #b6c9ff; /* Biru muda */
+  font-size: 14px;
+  background-color: #f9fbff; /* Biru pucat */
+}
+.form-container button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4c8dff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.2s;
+}
+.form-container button.secondary { background-color: #ffb86b; color: #fff; }
+.form-container button:hover { background-color: #376ed8; }
+#formStatus { margin-top: 10px; font-size: 13px; color: #2c8a42; }
+
+/* Search */
+#searchInput {
+  width: 80%;
+  max-width: 350px;
+  padding: 8px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #b6c9ff;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f9fbff;
+}
+
+/* Loading */
+.loading {
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1b3b6f;
+  display: none;
+}
+
+/* Table */
+.table-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-x: auto;
+  border: 1px solid #d4e4ff;
+}
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  font-size: 14px; 
+  color: #2b2b2b;
+}
+th, td { 
+  padding: 10px 12px; 
+  text-align: center; 
+  border-bottom: 1px solid #e6edff; 
+}
+th { 
+  background-color: #eaf1ff; /* Biru pastel lembut */
+  color: #1b3b6f; 
+  font-weight: 600; 
+}
+tr:hover { 
+  background-color: #f2f7ff; 
+  transition: 0.2s; 
+}
+
+/* Buttons in table */
+.action-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  color: white;
+}
+.edit-btn { background-color: #ffb86b; }
+.delete-btn { background-color: #ff6b6b; }
+.edit-btn:hover { background-color: #ff9f40; }
+.delete-btn:hover { background-color: #e05555; }
